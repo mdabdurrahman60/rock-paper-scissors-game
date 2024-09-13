@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <p>Rock Paper Scissors</p>
+    <button onclick="
+     
+   const computerMove = pickComputerMove();
+    
+    if (computerMove === 'rock'){
+        result = 'Tie.';
+    }else if (computerMove === 'paper'){
+        result = 'You lose.';
+    }else if (computerMove === 'scissors'){
+        result = 'You win.';
+    }
+    alert(`You picked ${'rock'}, Computer picked ${computerMove}. \n ${result}`)
+    ">Rock</button>
+
+
+    <button onclick="
+    
+    const computerMove = pickComputerMove();
+
+    
+    if (computerMove === 'rock'){
+        result = 'You win';
+    }else if (computerMove === 'paper'){
+        result = 'Tie';
+    }else if (computerMove === 'scissors'){
+        result = 'You lose.';
+    }
+    alert(`You picked ${'paper'}, Computer picked ${computerMove}. \n ${result}`)
+    ">Paper</button>
+
+
+    <button onclick="
+    
+    const computerMove = pickComputerMove();
+
+    
+    if (computerMove === 'rock'){
+        result = 'You lose';
+    }else if (computerMove === 'paper'){
+        result = 'You win.';
+    }else if (computerMove === 'scissors'){
+        result = 'Tie.';
+    }
+    alert(`You picked ${'scissors'}, Computer picked ${computerMove}. \n ${result}`)
+    ">Scissors </button>
+    
+    <script src="script.js">
+        
+
+    </script>
+</body>
+</html>
