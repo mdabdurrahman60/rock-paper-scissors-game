@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>Rock Paper Scissors</p>
-    <button onclick="playGame('rock')">Rock</button>
+    <p class="title">Rock Paper Scissors</p>
+    <button class="move-button" onclick="playGame('rock')"> <img class="move-icon" src="images/rock-emoji.png" alt=""></button>
 
 
-    <button onclick="playGame('paper')">Paper</button>
+    <button class="move-button" onclick="playGame('paper')"><img class="move-icon" src="images/paper-emoji.png" alt=""></button>
 
 
-    <button onclick="playGame('scissors')">Scissors </button>
-    <p class="js-result"></p>
+    <button class="move-button" onclick="playGame('scissors')"><img class="move-icon" src="images/scissors-emoji.png" alt=""> </button>
+    <p class="js-result result">Tie.</p>
     <p class="js-moves"></p>
-    <p class="js-score"></p>
+    <p class="js-score score"></p>
 
     <button onclick="{
         score.wins = 0;
@@ -26,8 +26,8 @@
         localStorage.removeItem('score');
         updateScoreElement();
 
-    };
-    ">Reset Score</button>
+    }; 
+    " class="reset-score-button">Reset Score</button>
 
     <script src="script.js">
         
